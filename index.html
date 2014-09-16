@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DAILY EXCHANGE RATE OF THE INDIAN RUPEE</title>
+  <meta charset="utf-8">
+  <meta name="description" content="DAILY EXCHANGE RATE OF THE INDIAN RUPEE">
+  <meta name="author" content="Pranjal Mandhaniya">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight/css/zenburn.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>DAILY EXCHANGE RATE OF THE INDIAN RUPEE</h1>
+    <h2>Graphical Presentation</h2>
+    <p>Pranjal Mandhaniya<br/>Developing Data Products Slideshow by Slidify</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>How do i did it?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol class = "build incremental">
+<li>First i took out the data from Reserve Bank Of India website and shorten       it for last thirty days.</li>
+<li>I then created a directory named pranjalm for my app.</li>
+<li>In main directory i created two new files ui.R and server.R.</li>
+<li>As we all know in ui.R three panels are there header,sidebar and main.</li>
+<li>In main panel, i put two tabbed sets showing data and plot.</li>
+<li>In sidebar, you can play with input with given options and also i use color for asthetics,to be input by user.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Some graphical code to run</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">y &lt;- c(1:30) 
+x &lt;- c(1:30)
+fit &lt;- lm(y ~ x)
+plot(x,y,type=&quot;l&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Why its better to use?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>Its quit felxible and you can change data by locating a new csv file in server.R also very easy to make change.</p></li>
+<li><p>This app is good for those who are from economical background.</p></li>
+<li><p>Code written is quit easy to understand and can be changed accordingly to suit your application.</p></li>
+<li><p>Also this code is totally self written plus learnt stuff, if you use it i will get encouraged.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Last slide to see the code</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>## Loading required package: shiny
+</code></pre>
+
+<pre><code>## Error: object &#39;ans&#39; not found
+</code></pre>
+
+<p>&lt;!--html_preserve--&gt;<div id="ans" class="control-group shiny-input-radiogroup">
+<label class="control-label" for="ans">What is 2x2 equals to?</label>
+<label class="radio ">
+<input type="radio" name="ans" id="ans1" value="2" checked="checked"/>
+<span>2</span>
+</label>
+<label class="radio ">
+<input type="radio" name="ans" id="ans2" value="4"/>
+<span>4</span>
+</label>
+<label class="radio ">
+<input type="radio" name="ans" id="ans3" value="6"/>
+<span>6</span>
+</label>
+<label class="radio ">
+<input type="radio" name="ans" id="ans4" value="8"/>
+<span>8</span>
+</label>
+</div>&lt;!--/html_preserve--&gt;</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='How do i did it?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Some graphical code to run'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Why its better to use?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Last slide to see the code'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+   
+  </html>
